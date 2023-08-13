@@ -1,34 +1,32 @@
-const element = document.createElement("div");
-document.body.append(element);
-const ul = document.createElement("ul");
-for (let i = 0; i < 3; i++) {
-    const li = document.createElement("li");
-    li.textContent = (i + 1).toString();
-    ul.append(li);
-  }
-  element.append(ul);
-  li.textContent = "Hi there!";
-// => <li>Hi there!</li>
-console.log(li.textContent);
-// => "Hi there!"
-const main = document.getElementById("main");
-main.innerHTML =
-  "<h1>Poodles!</h1><h3>An Essay into the Pom-Pom as Aesthetic Reconfiguration of the Other from a post-Frankfurt School Appropriationist Perspective</h3><p><em>By: Byron Q. Poodle, Esq., BA.</em></p>";
-  <main id="main">
-  <h1>Poodles!</h1>
-  <h3>
-    An Essay into the Pom-Pom as Aesthetic Reconfiguration of the Other from a
-    post-Frankfurt School Appropriationist Perspective
-  </h3>
-  <p><em>By: Byron Q. Poodle, Esq., BA.</em></p>
-</main>
-const element = document.getElementById("main");
-element.style.height = "300px";
-element.style.backgroundColor = "#27647B";
-element.textContent = "You've changed what's on the screen!";
-element.style.fontSize = "24px";
-element.style.marginLeft = "30px";
-element.style.lineHeight = 2;
-element.className = "pet-listing dog";
-element.classList.remove("dog");
-element.classList.add("cat", "sale");
+var mainNode = document.getElementById('main');
+
+// Check if the main node exists
+if (mainNode) {
+  // Get the parent node of the main node
+  var parentNode = mainNode.parentNode;
+
+  // Remove the main node from its parent
+  parentNode.removeChild(mainNode);
+} else {
+  console.log("Main node 'main#main' not found.");
+}
+var newHeader = document.createElement('h1');
+
+// Set content for the new header
+newHeader.textContent = "This is a new header!";
+var newHeader = document.createElement('h1');
+
+// Set content for the new header
+newHeader.textContent = "This is a new header!";
+
+// Set ID for the new header
+newHeader.id = "victory";
+var newHeader = document.createElement('h1');
+
+// Set ID for the new header
+newHeader.id = 'victory';
+
+// Set text content for the new header
+var newText = "YOUR-NAME is the champion";
+newText = newText.replace("YOUR-NAME", "Tom");
+newHeader.textContent = newText;
